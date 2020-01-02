@@ -4,7 +4,7 @@ int main()
 	EXEC SQL BEGIN DECLARE SECTION;
 		const char *target = "postgres@localhost:5432";
 		const char *user = "postgres";
-		/* const char passwd = "a80fe15a4251473ea62e411dbbb1d7b8"; */
+		/* const char *passwd = "a80fe15a4251473ea62e411dbbb1d7b8"; */
 	EXEC SQL END DECLARE SECTION;
 	
 	EXEC SQL CONNECT TO :target USER :user USING :passwd;
